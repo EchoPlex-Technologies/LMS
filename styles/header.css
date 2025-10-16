@@ -1,0 +1,127 @@
+/*
+These styles affect the top header section and the floating action button.
+
+The first section covers styles for the top header bar.
+*/
+
+.top-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.489);
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+}
+
+.top-header .left-section {
+  width: 180px;
+}
+
+.top-header .middle-section {
+  flex: 1;
+}
+
+.top-header .right-section {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  padding: 0 3px;
+}
+
+.top-header .nav-base {
+  padding: 4px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  background-color: #37acf0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+}
+
+.top-header .nav {
+  background-color: #f4f4f4;
+  flex: 1;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+}
+
+.top-header .nav-icon {
+  margin: 0px 4px;
+  height: 33px;
+  filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);
+}
+
+.top-header .user-image-base {
+  height: 58px;
+  width: 58px;
+  background-color: #37acf0;
+  border-radius: 50px;
+  position: absolute;
+  right: -13px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-header .user-image {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  background-color: #f4f4f4;
+  border-radius: 50px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+}
+
+/*
+From here downwards, the styles affect the floating action button
+*/
+
+.floating-action-base {
+  position: fixed;
+  bottom: 60px;
+  right: 55px;
+  height: 55px;
+  width: 55px;
+  background-color: #37acf0;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+  transition: all 0.3s;
+}
+
+.floating-action-base:hover {
+  background-color: #f4f4f4;
+}
+
+.floating-action-base:hover .floating-action-button {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.988);
+}
+
+.floating-action-button {
+  background-color: #f4f4f4;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  cursor: pointer;
+}
+
+.floating-action-button img {
+  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+}

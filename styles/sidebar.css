@@ -1,0 +1,161 @@
+/*this file contains the syles that will be applied to the sidebar, and all of its elements*/
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 2%;
+  bottom: 5%;
+  width: 160px;
+  background-color: #f4f4f4;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-sidebar {
+  background-color: #373649;
+}
+
+.sidebar-base {
+  position: fixed;
+  top: 1%;
+  left: 0;
+  bottom: 4%;
+  background-color: #37acf0;
+  width: 165px;
+  padding: 10px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .logo-section {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.sidebar .logo-section img {
+  height: 30px;
+}
+
+.sidebar .links-group {
+  margin: 15px auto;
+  width: 100%;
+}
+
+.sidebar .link-group-title {
+  font-size: 11px;
+  margin-left: -5px;
+  font-weight: bold;
+  color: rgb(181, 180, 180);
+  border-bottom: 1px solid rgb(181, 180, 180);
+  padding-bottom: 4%;
+}
+
+.sidebar .link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar .link-list-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: #e3e3e3;
+  padding: 4px 4px;
+  transition: all 0.2s;
+}
+
+.student-sidebar a {
+  color: #f4f4f4;
+}
+
+.student-sidebar .link-list-item {
+  color: #e3e3e3;
+}
+
+.sidebar .my-apps a {
+  color: #2ec71a;
+  transition: all 0.2s;
+}
+
+.sidebar .my-apps a .arrow {
+  color: #373649;
+  transition: all 0.2s;
+}
+
+.student-sidebar .my-apps a .arrow {
+  color: #f4f4f4;
+}
+
+.sidebar .current-page {
+  background-color: #373649;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.student-sidebar .current-page {
+  background-color: #f4f4f4;
+}
+
+.sidebar .current-page a {
+  color: #e3e3e3;
+}
+
+.student-sidebar .current-page a {
+  color: #373649;
+}
+
+.sidebar .link-list-item:hover {
+  background-color: #373649;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.student-sidebar .link-list-item:hover {
+  background-color: #e3e3e3;
+}
+
+.sidebar .link-list-item:hover a {
+  color: #e3e3e3;
+}
+
+.student-sidebar .link-list-item:hover a {
+  color: #373649;
+}
+
+.sidebar .link-list-item:hover .arrow {
+  color: #2ec71a;
+}
+
+
+.sidebar .link {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sidebar .icon {
+  height: 15px;
+  width: 15px;
+  /* blue:*/
+  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+  /* match-text-color:*/
+  /*filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);*/
+  /*filter: grayscale(100%) brightness(100%) contrast(100%);*/
+  margin-right: 5px;
+}
