@@ -90,16 +90,17 @@ From here downwards, the styles affect the floating action button
   position: fixed;
   bottom: 60px;
   right: 55px;
-  height: 55px;
-  width: 55px;
-  background-color: #37acf0;
-  border-radius: 100px;
+  height: 40px;
+  width: 45px;
+  background-color: green;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
   transition: all 0.3s;
+  border: 3px solid white;
 }
 
 .floating-action-base:hover {
@@ -107,21 +108,25 @@ From here downwards, the styles affect the floating action button
 }
 
 .floating-action-base:hover .floating-action-button {
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.988);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.988);
+  background-color: green;
 }
 
 .floating-action-button {
-  background-color: #f4f4f4;
+  background-color: green;
   border: none;
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
   border-radius: 100px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  justify-content: center;
   cursor: pointer;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
 }
 
 .floating-action-button img {
-  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+  filter: invert(100%);
 }

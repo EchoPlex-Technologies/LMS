@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="../styles/sidebar.css">
   <link rel="stylesheet" href="../styles/home.css">
   <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/teacher-home.css">
   <link rel="shortcut icon" href="../Images/logos/favicon.png" type="image/x-icon">
   <title>Echoplex LMS+</title>
 </head>
@@ -85,14 +87,32 @@
         </div>
       </div>
     </section>
-
+    <section class="floating-action-base">
+      <button class="floating-action-button">+</button>
+    </section>
   </header>
   <main>
     <!--This is the section which contains all the information we would like to show on the webpage-->
     <section class="stats-display-container">
       <div class="stats-display">
-        <!--This is where we display user statistics-->
-        <div class="stats-title">Remaining today</div>
+        <div class="title">
+          <div class="indicator"></div>
+          Up next
+        </div>
+        <div class="content">
+          <div class="count">1</div>
+          <div class="info">
+            <div class="info-title">Year1: Discrete Maths</div>
+            <div class="info-description">
+              <div class="time">13:00</div>
+              <div class="separator"></div>
+              <div class="location">RA5</div>
+              <div class="separator"></div>
+              <div class="date">today</div>
+            </div>
+            <div class="action-prompt">Click here for timetable</div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="my-timetable">
