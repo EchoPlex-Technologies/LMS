@@ -3,23 +3,32 @@
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
   padding: 6px;
-  /*display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-evenly;*/
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+
 .stats-display {
-  background-color: #373649;
+  flex-grow: 1;
   padding: 6px;
-  width: 200px;
+  flex-basis: 100;
   padding-bottom: 10px;
   margin: 5px;
   flex-shrink: 0;
-  color: #f4f4f4;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   position: relative;
+  border: 3px solid white;
+  transition: border 0.15s;
+}
+
+.stats-display:hover {
+  cursor: pointer;
+  border: 3px solid #373649;
+  ;
 }
 
 .stats-display .title {
@@ -36,10 +45,17 @@
 .stats-display .title .indicator {
   width: 10px;
   height: 10px;
-  background-color: rgb(12, 173, 12);
   border: 2px solid #f4f4f4;
   border-radius: 10px;
   margin: 2px 5px;
+}
+
+.class-indicator {
+  background-color: rgb(12, 173, 12);
+}
+
+.todo-indicator {
+  background-color: orange;
 }
 
 .stats-display .content {
@@ -54,8 +70,14 @@
   width: 22px;
 }
 
-.stats-display .info {
+.stats-display .info-container {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.stats-display .info {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -68,11 +90,21 @@
   color: #37acf0;
 }
 
+.stats-display .text-description {
+  width: 130px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
 .stats-display .separator {
-  height: 5px;
+  height: 3px;
   width: 5px;
   border-radius: 5px;
-  background-color: #f4f4f4;
+  background-color: rgb(145, 145, 145);
   margin: 0 5px;
 }
 
