@@ -1,6 +1,5 @@
 /*This file contains all the styles applied to the rest of the page, i.e the un-specialized parts of the webpage common to all pages*/
 body {
-  padding-left: 190px;
   background-color: white;
   font-family: arial, roboto;
   color: #373649;
@@ -11,4 +10,9 @@ body {
 a {
   text-decoration: none;
   color: #373649;
+}
+
+main {
+  max-width: 950px;
+  margin: auto;
 }

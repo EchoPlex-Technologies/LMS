@@ -5,6 +5,7 @@
   left: 0;
   top: 80px;
   bottom: 5%;
+  z-index: 300;
   width: 160px;
   background-color: #f4f4f4;
   border: none;
@@ -25,6 +26,7 @@
 
 .sidebar-base {
   position: fixed;
+  z-index: 301;
   top: 75px;
   left: 0;
   bottom: 4%;
