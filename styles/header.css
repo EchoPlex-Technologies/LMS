@@ -9,17 +9,20 @@ The first section covers styles for the top header bar.
   top: 0;
   right: 0;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.489);
+  background-color: #f4f4f4d2;
   height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 15px;
-
+  align-items: center;
+  box-shadow: 0px 4px 5px #f4f4f4;
 }
 
 .top-header .left-section {
   width: 180px;
+  display: flex;
+  align-items: center;
 }
 
 .top-header .middle-section {
