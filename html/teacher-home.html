@@ -17,7 +17,9 @@
   <header>
     <section class="top-header">
       <div class="left-section">
-        <!--No items should be put here. it is covered by the sidebar-->
+        <a href="teacher-home.html" class="logo-section">
+          <img src="../Images/logos/LMS+ Light bg removed.png" alt="LMS+">
+        </a>
       </div>
       <div class="middle-section"></div>
       <div class="right-section">
@@ -32,9 +34,19 @@
         </div>
       </div>
     </section>
-    <section class="sidebar-base">
-      <div class="sidebar">
+    <section class="sidebar-base js-sidebar-base close">
+      <div class="sidebar js-sidebar close">
         <!--This is our sidebar, where we put all of our links to the different website pages-->
+
+        <div class="toggle-button-container
+        ">
+          <button class="toggle-button js-toggle-button">
+            <div class="menu-icon-container">
+              <img src="../Images/icons/menu.svg" alt="" class="menu-icon">Menu
+            </div>
+            <img src="../Images/icons/close.svg" alt="" class="close-icon">
+          </button>
+        </div>
         <a href="teacher-home.html" class="logo-section">
           <img src="../Images/logos/LMS+ Light.png" alt="LMS+">
         </a>
@@ -145,27 +157,10 @@
       </div>
       <div class="stats-display">
         <div class="title">
-          <div class="indicator"></div>
-          Up next
+          Semester progress
         </div>
         <div class="content">
-          <div class="count">1</div>
-          <div class="info-container">
-            <div class="info">
-              <div class="info-title">Year1: Discrete Maths</div>
-              <div class="info-description">
-                <div class="time">13:00</div>
-                <div class="separator"></div>
-                <div class="location">RA5</div>
-                <div class="separator"></div>
-                <div class="date">today</div>
-              </div>
-              <div class="action-prompt">
-                Click here for timetable
-              </div>
-            </div>
-          </div>
-
+          <div class="count">45%</div>
         </div>
       </div>
     </section>
@@ -173,6 +168,7 @@
       <!--This is where we will display a custom timetable for the user's lectures-->
     </section>
   </main>
+  <script src="../scripts/general.js"></script>
 </body>
 
 </html>
