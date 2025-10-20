@@ -3,7 +3,7 @@
 .sidebar {
   position: fixed;
   left: 0;
-  top: 2%;
+  top: 80px;
   bottom: 5%;
   width: 160px;
   background-color: #f4f4f4;
@@ -15,6 +15,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .student-sidebar {
@@ -23,7 +25,7 @@
 
 .sidebar-base {
   position: fixed;
-  top: 1%;
+  top: 75px;
   left: 0;
   bottom: 4%;
   background-color: #37acf0;
@@ -32,9 +34,11 @@
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
-.sidebar .logo-section {
+.top-header .logo-section {
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -43,7 +47,7 @@
   margin-top: 10px;
 }
 
-.sidebar .logo-section img {
+.top-header .logo-section img {
   height: 30px;
 }
 
@@ -158,4 +162,56 @@
   /*filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);*/
   /*filter: grayscale(100%) brightness(100%) contrast(100%);*/
   margin-right: 5px;
+}
+
+.sidebar .toggle-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.sidebar .toggle-button {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.sidebar-base.close {
+  padding: 5px;
+  width: 63px;
+  height: 26px;
+}
+
+.sidebar.close {
+  padding: 2px;
+  width: 65px;
+  height: 22px;
+}
+
+.sidebar.open .menu-icon-container {
+  display: none;
+}
+
+.sidebar.open .close-icon {
+  height: 15px;
+  width: 15px;
+  filter: invert(50%);
+}
+
+.sidebar.close .menu-icon-container {
+  display: flex;
+  column-gap: 2px;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(160, 160, 160);
+}
+
+.sidebar.close .menu-icon {
+  height: 20px;
+  width: 20px;
+  filter: invert(50%);
+}
+
+.sidebar.close .close-icon {
+  display: none;
 }
