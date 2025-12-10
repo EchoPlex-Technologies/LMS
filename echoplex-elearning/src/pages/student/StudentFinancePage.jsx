@@ -1,0 +1,77 @@
+import './StudentFinancePage.css';
+
+function StudentFinancePage() {
+  return (
+    <>
+      <title>My Finances</title>
+
+      <div className="container">
+        <h1>Students Finance Portal</h1>
+        <section className="Student-info">
+          <h2>Student Details</h2>
+          <p><strong>Name :</strong>BBALAZA Muzamiru</p>
+          <p><strong>Student ID :</strong>2502700055</p>
+          <p><strong>Semester :</strong>1</p>
+          <p><strong>Academic Year :</strong>2025/2026</p>
+        </section>
+        <section className="fees-summary">
+          <h2>Fees Summary</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Fee Item</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="feesTable">
+              <tr>
+                <td>Tuition</td>
+                <td>1,200,000</td>
+                <td>100% Paid</td>
+              </tr>
+              <tr>
+                <td>Library</td>
+                <td>150,000</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>Hostel</td>
+                <td>500,000</td>
+                <td>80% Paid</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section className="balance">
+          <h2>Current Balance</h2>
+          <p><strong>Total Fees :</strong><span id="totalFees">1,850,000</span></p>
+
+          <p><strong>Amount Paid :</strong><span id="amountPaid"></span>1,700,000</p>
+
+          <p><strong>Balance Due :</strong><span id="balanceDue"></span>150,000</p>
+
+          <button id="makePaymentBtn" onclick="alert('Payment Received!')">Make Payment</button>
+        </section>
+
+        <section className="payment-history">
+          <h2>Payment History</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Amount (UGX)</th>
+                <th>Zeepay Payment REF</th>
+              </tr>
+            </thead>
+            <tbody id="historyBody">
+
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </>
+  );
+}
+
+export default StudentFinancePage;
