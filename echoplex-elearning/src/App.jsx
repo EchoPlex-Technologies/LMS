@@ -9,16 +9,18 @@ import './App.css'
 function App() {
   return (
     <>
-      <Routes>
-        <Route index element={<HomePage />} />
+      <div className="app">
+        <Routes>
+          <Route index element={<HomePage />} />
 
-        <Route path="/student-dashboard" element={<StudentDashboard />} />
-        <Route path="/student-finance" element={<StudentFinancePage />} />
+          <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/student-finance" element={<StudentFinancePage />} />
 
-        <Route path='/teacher-dashboard' element={<TeacherDashboard />} />
+          <Route path='/teacher-dashboard' element={<TeacherDashboard />} />
 
 
-      </Routes>
+        </Routes>
+      </div>
     </>
   )
 }
