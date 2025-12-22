@@ -1,6 +1,5 @@
 import './Header.css'
 
-import LogoLight from '../assets/images/logos/logo-light-bg-removed.png'
 
 function Header() {
   return (

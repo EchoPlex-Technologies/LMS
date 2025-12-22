@@ -1,0 +1,117 @@
+.stats-display-container {
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+
+.stats-display {
+  flex-grow: 1;
+  padding: 6px;
+  flex-basis: 100;
+  padding-bottom: 10px;
+  margin: 5px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 3px solid white;
+  transition: border 0.15s;
+}
+
+.stats-display:hover {
+  cursor: pointer;
+  border: 3px solid #373649;
+  ;
+}
+
+.stats-display .title {
+  color: rgb(181, 180, 180);
+  flex: 1;
+  font-weight: bold;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(181, 180, 180);
+  padding-bottom: 3px;
+}
+
+.stats-display .title .indicator {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f4f4f4;
+  border-radius: 10px;
+  margin: 2px 5px;
+}
+
+.class-indicator {
+  background-color: rgb(12, 173, 12);
+}
+
+.todo-indicator {
+  background-color: orange;
+}
+
+.stats-display .content {
+  display: flex;
+  align-items: center;
+}
+
+.stats-display .count {
+  font-size: 40px;
+  margin: 0px 6px;
+  font-weight: bold;
+  width: 22px;
+}
+
+.stats-display .info-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.stats-display .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.stats-display .info-description {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #37acf0;
+}
+
+.stats-display .text-description {
+  width: 130px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+.stats-display .separator {
+  height: 3px;
+  width: 5px;
+  border-radius: 5px;
+  background-color: rgb(145, 145, 145);
+  margin: 0 5px;
+}
+
+.action-prompt {
+  position: absolute;
+  bottom: 1px;
+  right: 2px;
+  font-size: 11px;
+  color: rgb(145, 145, 145);
+}
