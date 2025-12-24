@@ -1,7 +1,7 @@
 import './UserTools.css'
 import AppsIcon from '../../assets/images/icons/apps.svg'
 import NotificationsIcon from '../../assets/images/icons/notifications.svg'
-import UserImage from '../../assets/images/icons/teacher.svg'
+import DefaultUserIcon from '../../assets/images/icons/icons8-profile-94.png'
 
 function UserTools() {
   return (
@@ -10,7 +10,7 @@ function UserTools() {
         <img src={AppsIcon} alt="" className="tool-icon" />
         <img src={NotificationsIcon} alt="" className="notifications-icon tool-icon" />
         <div className="user-image-base">
-          <img src={UserImage} alt="" className="user-image" />
+          <img src={DefaultUserIcon} alt="" className="user-image" />
         </div>
       </nav>
     </div>

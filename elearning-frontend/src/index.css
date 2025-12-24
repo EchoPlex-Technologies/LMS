@@ -13,7 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --color-secondary: #37acf0;
-  --color-secondary-hover: #3a59d1;
+  --color-secondary-two: #3a59d1;
 
   --color-primary: #ffffff;
   --color-primary-two: #e3e3e3;
@@ -21,7 +21,10 @@
   --color-text: #373649;
   --color-text-two: #b5b4b4;
 
+  --color-green-accent: #2ec71a;
+
   --box-shadow-base: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  --box-shadow-soft: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 a {

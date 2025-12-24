@@ -10,6 +10,8 @@
   justify-content: space-between;
   padding: 10px 15px;
   align-items: center;
+  box-shadow: var(--box-shadow-base);
+  z-index: 302;
 }
 
 .header .left-section {

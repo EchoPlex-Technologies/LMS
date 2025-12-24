@@ -1,123 +1,97 @@
+import { Link, NavLink } from 'react-router'
 import './Sidebar.css'
-import MenuIcon from '../assets/images/icons/menu.svg'
-import CloseIcon from '../assets/images/icons/close.svg'
 import HomeIcon from '../assets/images/icons/home1.svg'
-import CalendarIcon from '../assets/images/icons/calendar-date-2.svg'
-import ScheduleIcon from '../assets/images/icons/schedule-is-successful.svg'
-import NotebookIcon from '../assets/images/icons/notebook.svg'
-import GraphIcon from '../assets/images/icons/filled-graph.svg'
-import SquaresIcon from '../assets/images/icons/squares.svg'
-import CertificateIcon from '../assets/images/icons/certificate.svg'
-import StudentIcon from '../assets/images/icons/male-student.svg'
-import AttendanceIcon from '../assets/images/icons/graph.svg'
+import ClockIcon from '../assets/images/icons/time.svg'
+import AppsIcon from '../assets/images/icons/apps.svg'
+import AttendanceIcon from '../assets/images/icons/icons8-attendance-96.png'
+import ScheduleIcon from '../assets/images/icons/icons8-schedule-100.png'
+import WriteIcon from '../assets/images/icons/write.svg'
+import AssessmentsIcon from '../assets/images/icons/icons8-graph-100.png'
+import FinancesIcon from '../assets/images/icons/wallet.svg'
+import UserIcon from '../assets/images/icons/icons8-user-100.png'
 
 
 function Sidebar() {
-  let isVisible = true;
   function toggleSidebar() {
-    if (isVisible) {
-      isVisible = false;
-    } else if (!isVisible) {
-      isVisible = true;
-    }
+    const sidebarBase = document.querySelector('.js-sidebar-base');
+    sidebarBase.classList.toggle('closed');
   }
 
-  function displaySidebar() {
-    if (isVisible) {
-      return <VisibleSidebar />
-    } else {
-      return <HiddenSidebar />
-    }
-
-  }
-
-  function VisibleSidebar() {
-    return (
-      <div className="sidebar-base js-sidebar-base"  >
-        <div className="sidebar js-sidebar">
-
-          <div className="toggle-button-container">
-            <button className="toggle-button js-toggle-button" onClick={toggleSidebar()}>
-              <div className="menu-icon-container">
-                <img src={MenuIcon} alt="" className="menu-icon" />Menu
-              </div>
-              <img src={CloseIcon} alt="" className="close-icon" />
-            </button>
-          </div>
-
-          <div className="links-group link-list-item current-page">
-            <img src={HomeIcon} alt="" className="icon" />
-            <a href="teacher-home.html" className="link" >Home</a>
-          </div>
-
-          <div className="links-group">
-            <div className="link-group-title">Me</div>
-            <ul className="link-list">
-              <li className="link-list-item">
-                <img src={CalendarIcon} alt="" className="icon" />
-                <a href="#" className="link">Today's Classes</a>
-              </li>
-              <li className="link-list-item">
-                <img src={ScheduleIcon} alt="" className="icon" />
-                <a href="#" className="link">Classes this week</a>
-              </li>
-              <li className="link-list-item">
-                <img src={NotebookIcon} alt="" className="icon" />
-                <a href="#" className="link">Lesson Plan</a>
-              </li>
-              <li className="link-list-item">
-                <img src={GraphIcon} alt="" className="icon" />
-                <a href="#" className="link">Attendance record</a>
-              </li>
-              <li className="link-list-item my-apps">
-                <img src={SquaresIcon} alt="" className="icon" />
-                <a href="#" className="link">My Apps<span className="arrow"> &#8599;</span></a>
-              </li>
-            </ul>
-          </div>
-          <div className="links-group">
-            <div className="link-group-title">My Students</div>
-            <ul className="link-list">
-              <li className="link-list-item">
-                <img src={CertificateIcon} alt="" className="icon" />
-                <a href="#" className="link">Assessments</a>
-              </li>
-              <li className="link-list-item">
-                <img src={StudentIcon} alt="" className="icon" />
-                <a href="#" className="link">Manage Students</a>
-              </li>
-
-              <li className="link-list-item">
-                <img src={AttendanceIcon} alt="" className="icon" />
-                <a href="#" className="link">Student Attendance</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  function HiddenSidebar() {
-    return (
-      <div className="sidebar-base js-sidebar-base close"  >
-        <div className="sidebar js-sidebar close">
-
-          <div className="toggle-button-container">
-            <button className="toggle-button js-toggle-button" onClick={toggleSidebar()}>
-              <div className="menu-icon-container">
-                <img src="../Images/icons/menu.svg" alt="" className="menu-icon" />Menu
-              </div>
-              <img src="../Images/icons/close.svg" alt="" className="close-icon" />
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   return (
-    displaySidebar()
+    <div className="sidebar-base js-sidebar-base">
+      <div className="toggle-button-container">
+        <div className="toggle-button js-toggle-button" onClick={toggleSidebar}>Menu
+        </div>
+      </div>
+
+      <StudentSidebar />
+    </div>
+  );
+}
+
+function StudentSidebar() {
+  return (
+    <div className="sidebar js-sidebar">
+      <NavLink to='/' className="links-group link link-list-item">
+        <img src={HomeIcon} alt="" className="icon" />
+        <div>Home</div>
+      </NavLink>
+
+      <div className="links-group">
+        <div className="link-group-title">My ProgramToday</div>
+        <ul className="link-list">
+          <NavLink to="/today" className="link-list-item">
+            <img src={ClockIcon} alt="" className="icon" />
+            <div className="link">Today</div>
+          </NavLink>
+          <NavLink to="#" className="link-list-item">
+            <img src={ScheduleIcon} alt="" className="icon" />
+            <div className="link">Schedule</div>
+          </NavLink>
+          <NavLink to="#" className="link-list-item">
+            <img src={WriteIcon} alt="" className="icon" />
+            <div className="link">Assignments</div>
+          </NavLink>
+        </ul>
+      </div>
+
+      <div className="links-group">
+        <div className="link-group-title">Analytics</div>
+        <ul className="link-list">
+          <NavLink className="link-list-item">
+            <img src={AttendanceIcon} alt="" className="icon" />
+            <div className="link">Attendance</div>
+          </NavLink>
+          <NavLink className="link-list-item">
+            <img src={AssessmentsIcon} alt="" className="icon" />
+            <div className="link">Assessments</div>
+          </NavLink>
+
+          <NavLink className="link-list-item">
+            <img src={FinancesIcon} alt="" className="icon" />
+            <div className="link">Finances</div>
+          </NavLink>
+        </ul>
+      </div>
+
+      <div className="links-group">
+        <div className="link-group-title">Extras</div>
+        <ul className="link-list">
+          <NavLink className="link-list-item my-apps">
+            <img src={AppsIcon} alt="" className="icon" />
+            <div className="link">My Apps<span className="arrow"> &#8599;</span></div>
+          </NavLink>
+          <NavLink className="link-list-item">
+            <img src={UserIcon} alt="" className="icon" />
+            <div className="link">Profile</div>
+          </NavLink>
+          <li className="dark-mode-container">
+            <div className="dark-mode">Dark mode</div>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }
 
