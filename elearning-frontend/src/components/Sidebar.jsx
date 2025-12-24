@@ -35,21 +35,21 @@ function StudentSidebar() {
     <div className="sidebar js-sidebar">
       <NavLink to='/' className="links-group link link-list-item">
         <img src={HomeIcon} alt="" className="icon" />
-        <div>Home</div>
+        <div className='link'>Home</div>
       </NavLink>
 
       <div className="links-group">
-        <div className="link-group-title">My ProgramToday</div>
+        <div className="link-group-title">My Classes</div>
         <ul className="link-list">
           <NavLink to="/today" className="link-list-item">
             <img src={ClockIcon} alt="" className="icon" />
             <div className="link">Today</div>
           </NavLink>
-          <NavLink to="#" className="link-list-item">
+          <NavLink to="/schedule" className="link-list-item">
             <img src={ScheduleIcon} alt="" className="icon" />
             <div className="link">Schedule</div>
           </NavLink>
-          <NavLink to="#" className="link-list-item">
+          <NavLink to="/assignments" className="link-list-item">
             <img src={WriteIcon} alt="" className="icon" />
             <div className="link">Assignments</div>
           </NavLink>
@@ -59,16 +59,16 @@ function StudentSidebar() {
       <div className="links-group">
         <div className="link-group-title">Analytics</div>
         <ul className="link-list">
-          <NavLink className="link-list-item">
+          <NavLink to="/attendance" className="link-list-item">
             <img src={AttendanceIcon} alt="" className="icon" />
             <div className="link">Attendance</div>
           </NavLink>
-          <NavLink className="link-list-item">
+          <NavLink to="/assessments" className="link-list-item">
             <img src={AssessmentsIcon} alt="" className="icon" />
             <div className="link">Assessments</div>
           </NavLink>
 
-          <NavLink className="link-list-item">
+          <NavLink to="/finances" className="link-list-item">
             <img src={FinancesIcon} alt="" className="icon" />
             <div className="link">Finances</div>
           </NavLink>
@@ -78,11 +78,11 @@ function StudentSidebar() {
       <div className="links-group">
         <div className="link-group-title">Extras</div>
         <ul className="link-list">
-          <NavLink className="link-list-item my-apps">
+          <NavLink to='/apps' className="link-list-item my-apps">
             <img src={AppsIcon} alt="" className="icon" />
             <div className="link">My Apps<span className="arrow"> &#8599;</span></div>
           </NavLink>
-          <NavLink className="link-list-item">
+          <NavLink to='/profile' className="link-list-item">
             <img src={UserIcon} alt="" className="icon" />
             <div className="link">Profile</div>
           </NavLink>

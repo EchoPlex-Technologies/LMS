@@ -82,27 +82,6 @@
   transition: all 0.2s;
 }
 
- .active {
-  background-color: var(--color-text);
-  cursor: pointer;
-  box-shadow: var(--box-shadow-base);
-  border-radius: 4px;
-  padding: 4px 2px;
-  color: var(--color-primary);
-}
-
-.student-sidebar .current-page {
-  background-color: var(--color-primary);
-}
-
-.sidebar .current-page a {
-  color: var(--color-text-two);
-}
-
-.student-sidebar .current-page a {
-  color: var(--color-text);
-}
-
 .sidebar .link-list-item:hover {
   background-color: var(--color-text);
   cursor: pointer;
@@ -119,6 +98,19 @@
   font-weight: bold;
   font-size: 16px;
   color: var(--color-text);
+}
+
+.link-list-item.active {
+  background-color: var(--color-text);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-base);
+  border-radius: 4px;
+  padding: 4px 2px;
+  color: var(--color-primary);
+}
+
+.link-list-item.active .link {
+  color: var(--color-primary);
 }
 
 .sidebar .icon {

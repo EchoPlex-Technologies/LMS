@@ -1,16 +1,17 @@
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar';
-import './ProgramToday.css'
+import './AttendancePage.css'
 
-function ProgramToday() {
+function AttendancePage() {
   return (
     <>
       <Header />
       <Sidebar />
 
-      Today's program
+      <h1>Attendance page</h1>
+
     </>
   );
 }
 
-export default ProgramToday;
+export default AttendancePage;
