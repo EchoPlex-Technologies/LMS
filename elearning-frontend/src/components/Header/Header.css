@@ -3,7 +3,7 @@
   top: 0;
   right: 0;
   left: 0;
-  background-color: var(--color-primary-two);
+  background-color: var(--color-primary);
   height: 50px;
   display: flex;
   flex-direction: row;
