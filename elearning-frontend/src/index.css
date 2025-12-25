@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-two);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@
   --color-secondary-two: #3a59d1;
 
   --color-primary: #ffffff;
-  --color-primary-two: #e3e3e3;
+  --color-primary-two: #ece9e9;
 
   --color-text: #373649;
   --color-text-two: #b5b4b4;
@@ -69,13 +69,19 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Dark Mode Colors */
+
 @media (prefers-color-scheme: dark) {
   :root {
   --color-primary: #373649;
-  --color-primary-two: #b5b4b4;
+  --color-primary-two: #2d2c2c;
 
   --color-text: #ffffff;
   --color-text-two: #e3e3e3;
+  }
+
+  .header .tool-icon {
+    filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
   }
 
   button {

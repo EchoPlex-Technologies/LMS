@@ -3,13 +3,13 @@
   display: flex;
   flex: 1;
   align-items: center;
-  background-color: #37acf0;
+  background-color: var(--color-secondary);
   border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.288);
+  box-shadow: var(--box-shadow-base);
 }
 
 .header .tools{
-  background-color: #f4f4f4;
+  background-color: var(--color-primary);
   flex: 1;
   height: 40px;
   display: flex;
@@ -23,16 +23,23 @@
   margin: 0px 4px;
   height: 33px;
   filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);
+  cursor: pointer ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .header .tool-icon {
+    filter: invert(95%) ;
+  }
 }
 
  .user-image-base {
   height: 58px;
   width: 58px;
-  background-color: #37acf0;
+  background-color: var(--color-secondary);
   border-radius: 50px;
   position: absolute;
   right: -13px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  box-shadow: var(--box-shadow-base);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,8 +49,8 @@
   height: 50px;
   width: 50px;
   object-fit: cover;
-  background-color: #f4f4f4;
+  background-color: var(--color-primary);
   border-radius: 50px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  box-shadow: var(--box-shadow-base);
 }
 
