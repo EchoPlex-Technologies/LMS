@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/logos/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <section className="top-header">
+        <div className="left-section">
+          <Link to="teacher-home.html" className="logo-section">
+            <img src="../Images/logos/LMS+ Light bg removed.png" alt="LMS+" />
+          </Link>
+        </div>
+        <div className="middle-section"></div>
+        <div className="right-section">
+          <div className="nav-base">
+            <nav className="nav">
+              <img src="../Images/icons/apps.svg" alt="" className="nav-icon" />
+              <img
+                src="../Images/icons/notifications.svg"
+                alt=""
+                className="notifications-icon nav-icon"
+              />
+              <div className="user-image-base">
+                <img
+                  src="../Images/icons/teacher-male.svg"
+                  alt=""
+                  className="user-image"
+                />
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section className="sidebar-base js-sidebar-base close">
+        <div className="sidebar student-sidebar js-sidebar close">
+          <!--This is our sidebar, where we put all of our links to the different website pages-->
+
+          <div
+            className="toggle-button-container
+        "
+          >
+            <button className="toggle-button js-toggle-button">
+              <div className="menu-icon-container">
+                <img
+                  src="../Images/icons/menu.svg"
+                  alt=""
+                  className="menu-icon"
+                />Menu
+              </div>
+              <img
+                src="../Images/icons/close.svg"
+                alt=""
+                className="close-icon"
+              />
+            </button>
+          </div>
+
+          <div className="links-group link-list-item current-page">
+            <img src="../Images/icons/home1.svg" alt="" className="icon" />
+            <Link to="teacher-home.html" className="link">Home</Link>
+          </div>
+          <div className="links-group">
+            <div className="link-group-title">Class</div>
+            <ul className="link-list">
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/calendar-date-2.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Today's-class.html" className="link"
+                  >Today's Classes</Link
+                >
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/schedule-is-successful.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Weekly-classes.html" className="link"
+                  >Classes this week</Link
+                >
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/bookshelf.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Courses.html" className="link">Courses</Link>
+              </li>
+              <li className="link-list-item">
+                <img src="../Images/icons/write.svg" alt="" className="icon" />
+                <Link to="Assignments.html" className="link">Assignments</Link>
+              </li>
+              <li className="link-list-item my-apps">
+                <img
+                  src="../Images/icons/squares.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Apps.html" className="link"
+                  >My Apps<span className="arrow"> &#8599;</span></Link
+                >
+              </li>
+            </ul>
+          </div>
+          <div className="links-group">
+            <div className="link-group-title">My Details</div>
+            <ul className="link-list">
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/exam-result.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Results.html" className="link">Results</Link>
+              </li>
+              <li className="link-list-item">
+                <img src="../Images/icons/wallet.svg" alt="" className="icon" />
+                <Link to="Finances.html" className="link">Finances</Link>
+              </li>
+
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/filled-graph.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="Records.html" className="link">Attendance Record</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="floating-action-base">
+        <button className="floating-action-button">+</button>
+      </section>
+    </header>
+    <main>
+      <!--This is the section which contains all the information we would like to show on the webpage-->
+      <section className="stats-display-container">
+        <div className="stats-display">
+          <!--This is where we display user statistics-->
+        </div>
+      </section>
+      <section className="my-timetable">
+        <!--This is where we will display a custom timetable for the user's lectures-->
+      </section>
+    </main>
+    <script src="../scripts/general.js"></script>
+  </body>
+</html>

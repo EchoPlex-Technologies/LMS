@@ -1,15 +1,16 @@
-import './HomePage.css'
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar';
+import './ProgramTodayPage.css'
 
-function HomePage() {
+function ProgramTodayPage() {
   return (
     <>
-      <title>Home</title>
       <Header />
       <Sidebar />
+
+      Today's program
     </>
   );
 }
 
-export default HomePage;
+export default ProgramTodayPage;

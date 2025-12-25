@@ -1,15 +1,17 @@
-import './HomePage.css'
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar';
+import './SchedulePage.css'
 
-function HomePage() {
+function SchedulePage() {
   return (
     <>
-      <title>Home</title>
       <Header />
       <Sidebar />
+
+      <h1>Schedule page</h1>
+
     </>
   );
 }
 
-export default HomePage;
+export default SchedulePage;

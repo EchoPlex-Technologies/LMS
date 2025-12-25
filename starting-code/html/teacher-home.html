@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/sidebar.css" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/general.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/teacher-home.css" />
+    <link
+      rel="shortcut icon"
+      href="../Images/logos/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Echoplex LMS+</title>
+  </head>
+
+  <body>
+    <header>
+      <section className="top-header">
+        <div className="left-section">
+          <Link to="teacher-home.html" className="logo-section">
+            <img src="../Images/logos/LMS+ Light bg removed.png" alt="LMS+" />
+          </Link>
+        </div>
+        <div className="middle-section"></div>
+        <div className="right-section">
+          <div className="nav-base">
+            <nav className="nav">
+              <img src="../Images/icons/apps.svg" alt="" className="nav-icon" />
+              <img
+                src="../Images/icons/notifications.svg"
+                alt=""
+                className="notifications-icon nav-icon"
+              />
+              <div className="user-image-base">
+                <img
+                  src="../Images/icons/teacher-male.svg"
+                  alt=""
+                  className="user-image"
+                />
+              </div>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section className="sidebar-base js-sidebar-base close">
+        <div className="sidebar js-sidebar close">
+          <!--This is our sidebar, where we put all of our links to the different website pages-->
+
+          <div
+            className="toggle-button-container
+        "
+          >
+            <button className="toggle-button js-toggle-button">
+              <div className="menu-icon-container">
+                <img
+                  src="../Images/icons/menu.svg"
+                  alt=""
+                  className="menu-icon"
+                />Menu
+              </div>
+              <img
+                src="../Images/icons/close.svg"
+                alt=""
+                className="close-icon"
+              />
+            </button>
+          </div>
+
+          <div className="links-group link-list-item current-page">
+            <img src="../Images/icons/home1.svg" alt="" className="icon" />
+            <Link to="teacher-home.html" className="link">Home</Link>
+          </div>
+          <div className="links-group">
+            <div className="link-group-title">Me</div>
+            <ul className="link-list">
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/calendar-date-2.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Today's Classes</Link>
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/schedule-is-successful.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Classes this week</Link>
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/notebook.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Lesson Plan</Link>
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/filled-graph.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Attendance record</Link>
+              </li>
+              <li className="link-list-item my-apps">
+                <img
+                  src="../Images/icons/squares.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link"
+                  >My Apps<span className="arrow"> &#8599;</span></Link
+                >
+              </li>
+            </ul>
+          </div>
+          <div className="links-group">
+            <div className="link-group-title">My Students</div>
+            <ul className="link-list">
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/certificate.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Assessments</Link>
+              </li>
+              <li className="link-list-item">
+                <img
+                  src="../Images/icons/male-student.svg"
+                  alt=""
+                  className="icon"
+                />
+                <Link to="#" className="link">Manage Students</Link>
+              </li>
+
+              <li className="link-list-item">
+                <img src="../Images/icons/graph.svg" alt="" className="icon" />
+                <Link to="#" className="link">Student Attendance</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="floating-action-base">
+        <button className="floating-action-button">+</button>
+      </section>
+    </header>
+    <main>
+      <!--This is the section which contains all the information we would like to show on the webpage-->
+      <section className="stats-display-container">
+        <div className="stats-display">
+          <div className="title">
+            <div className="indicator class-indicator"></div>
+            Next class
+          </div>
+          <div className="content">
+            <div className="count">1</div>
+            <div className="info-container">
+              <div className="info">
+                <div className="info-title">Year1: Discrete Maths</div>
+                <div className="info-description">
+                  <div className="time">13:00</div>
+                  <div className="separator"></div>
+                  <div className="location">RA5</div>
+                  <div className="separator"></div>
+                  <div className="date">Today</div>
+                </div>
+                <div className="action-prompt">Click here for timetable</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="stats-display">
+          <div className="title">
+            <div className="indicator todo-indicator"></div>
+            To do
+          </div>
+          <div className="content">
+            <div className="count">3</div>
+            <div className="info-container">
+              <div className="info">
+                <div className="info-title">Upload Course Work Marks</div>
+                <div className="info-description">
+                  <div className="text-description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ducimus dicta dolor quaerat, adipisci vel, culpa facilis
+                    eaque quis hic eius delectus dolorem ipsa! Possimus sunt
+                    quae veritatis, exercitationem minima libero.
+                  </div>
+                  <div className="separator"></div>
+                  <div className="date">27/11/2025</div>
+                </div>
+                <div className="action-prompt">Click here for details</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="stats-display">
+          <div className="title">Semester progress</div>
+          <div className="content">
+            <div className="count">45%</div>
+          </div>
+        </div>
+      </section>
+      <section className="my-timetable">
+        <!--This is where we will display a custom timetable for the user's lectures-->
+      </section>
+    </main>
+    <script src="../scripts/general.js"></script>
+  </body>
+</html>

@@ -5,19 +5,26 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--color-primary-two);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --text-color-primary: #112B3C;
-  --color-primary: #37acf0;
-  --color-secondary: #205375;
-  --color-accent-bright: #F66B0E;
-  --color-accent-soft: #EFEFEF;
-  --color-background: #FFFFFF;
+  --color-secondary: #37acf0;
+  --color-secondary-two: #3a59d1;
+
+  --color-primary: #ffffff;
+  --color-primary-two: #ece9e9;
+
+  --color-text: #373649;
+  --color-text-two: #b5b4b4;
+
+  --color-green-accent: #2ec71a;
+
+  --box-shadow-base: 0px 0px 5px rgba(0, 0, 0, 0.588);
+  --box-shadow-soft: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -54,24 +61,27 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-
 button:hover {
   border-color: #646cff;
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* Dark Mode Colors */
+
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+  --color-primary: #373649;
+  --color-primary-two: #2d2c2c;
+
+  --color-text: #ffffff;
+  --color-text-two: #e3e3e3;
   }
 
-  a:hover {
-    color: #747bff;
+  .header .tool-icon {
+    filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
   }
 
   button {

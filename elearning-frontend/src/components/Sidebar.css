@@ -1,0 +1,181 @@
+/*this file contains the syles that will be applied to the sidebar, and all of its elements*/
+
+
+/*styles for the sidebar base and the main sidebar*/
+
+.sidebar-base {
+  position: fixed;
+  z-index: 301;
+  top: 70px;
+  left: 0;
+  bottom: 4%;
+  background-color: var(--color-secondary);
+  width: 165px;
+  padding: 10px;
+ /* border-top-right-radius: 12px;*/
+  border-bottom-right-radius: 12px;
+  box-shadow: var(--box-shadow-soft);
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 70px;
+  bottom: 5%;
+  z-index: 300;
+  width: 160px;
+  background-color: var(--color-primary);
+  border: none;
+  /*border-top-right-radius: 10px;*/
+  border-bottom-right-radius: 10px;
+  box-shadow: var(--box-shadow-base);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/*styles for the sidebar components*/
+
+.sidebar .links-group {
+  margin: 15px auto;
+  width: 100%;
+}
+
+.sidebar .link-group-title {
+  font-size: 13px;
+  margin-left: -5px;
+  font-weight: bold;
+  color: var(--color-text-two);
+  border-bottom: 1px solid var(--color-text-two);
+  padding-bottom: 4%;
+  display: flex;
+  justify-content: end;
+}
+
+.sidebar .link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar .link-list-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-two);
+  padding: 4px 4px;
+  transition: all 0.2s;
+}
+
+.sidebar .my-apps a {
+  color: var(--color-green-accent);
+  transition: all 0.2s;
+}
+
+.sidebar .my-apps a .arrow {
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+
+.sidebar .link-list-item:hover {
+  background-color: var(--color-text);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-base);
+  border-radius: 4px;
+  padding: 4px 2px;
+}
+
+.sidebar .link-list-item:hover .link {
+  color: var(--color-primary-two);
+}
+
+.sidebar .link {
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.link-list-item.active {
+  background-color: var(--color-text);
+  cursor: pointer;
+  box-shadow: var(--box-shadow-base);
+  border-radius: 4px;
+  padding: 4px 2px;
+  color: var(--color-primary);
+}
+
+.link-list-item.active .link {
+  color: var(--color-primary);
+}
+
+.sidebar .icon {
+  height: 25px;
+  width: 25px;
+  /* blue:*/
+  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+  /* match-text-color:*/
+  /*filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);*/
+  /*filter: grayscale(100%) brightness(100%) contrast(100%);*/
+  margin-right: 5px;
+}
+
+
+/* styles for the dark mode toggle*/ 
+
+.sidebar .dark-mode-container {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-two);
+  padding: 4px 4px;
+  transition: all 0.2s;
+}
+
+
+/*styles for the sidebar toggle button*/
+
+.toggle-button-container {
+  position: absolute;
+  display: flex;
+  left: 190px;
+  top: 10px;
+  box-shadow: var(--box-shadow-base);
+  border-radius: 5px;
+  color: var(--color-primary);
+  font-weight: bold;
+  padding: 5px; 
+  font-size: 12px;
+  width: max-content;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-text);
+  transition: all 0.15s ease-in-out;
+}
+
+.toggle-button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.toggle-button-container:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+/* these styles below are meant to handle the closed states of the sidebar*/
+
+.sidebar-base.closed {
+  transform: translateX(-175px);
+}
+
+.sidebar-base.closed  .sidebar{
+  transform: translateX(-175px);
+}
