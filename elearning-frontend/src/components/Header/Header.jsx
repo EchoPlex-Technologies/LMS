@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import './Header.css'
-import LogoLight from '../../assets/images/logos/logo-light.png'
+import LogoLight from '../../assets/images/logos/logo-light-Photoroom.png'
 import UserTools from './UserTools';
 
 

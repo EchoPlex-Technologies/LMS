@@ -9,6 +9,10 @@ function FinancialsPage() {
       <Sidebar />
 
       <h1>Financials page</h1>
+      <iframe src="https://www.example.com" width="600" height="400" title="Description of the embedded website">
+        <p>Your browser does not support iframes.</p>
+      </iframe>
+
 
     </>
   );
