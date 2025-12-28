@@ -88,3 +88,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Ensure icons react to the programmatic theme toggle (data-theme) as well */
+:root[data-theme="dark"] .header .tool-icon {
+  filter: invert(95%);
+}
+:root:not([data-theme="dark"]) .header .tool-icon {
+  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+}

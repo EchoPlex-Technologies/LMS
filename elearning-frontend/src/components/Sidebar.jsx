@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router'
 import './Sidebar.css'
 import HomeIcon from '../assets/images/icons/home1.svg'
@@ -12,10 +13,36 @@ import UserIcon from '../assets/images/icons/icons8-user-100.png'
 
 
 function Sidebar() {
+  const [theme, setTheme] = useState('light');
+
   function toggleSidebar() {
     const sidebarBase = document.querySelector('.js-sidebar-base');
     sidebarBase.classList.toggle('closed');
   }
+
+  function applyTheme(t) {
+    if (t === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+  }
+
+  function toggleTheme() {
+    const next = theme === 'dark' ? 'light' : 'dark';
+    setTheme(next);
+    applyTheme(next);
+    localStorage.setItem('theme', next);
+  }
+
+  useEffect(() => {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initial = saved || (prefersDark ? 'dark' : 'light');
+
+    applyTheme(initial);
+
+  }, []);
 
 
   return (
@@ -25,12 +52,12 @@ function Sidebar() {
         </div>
       </div>
 
-      <StudentSidebar />
+      <StudentSidebar theme={theme} toggleTheme={toggleTheme} />
     </div>
   );
 }
 
-function StudentSidebar() {
+function StudentSidebar({ theme, toggleTheme }) {
   return (
     <div className="sidebar js-sidebar">
       <NavLink to='/' className="links-group link link-list-item">
@@ -87,7 +114,15 @@ function StudentSidebar() {
             <div className="link">Profile</div>
           </NavLink>
           <li className="dark-mode-container">
-            <div className="dark-mode">Dark mode</div>
+            <div className="dark-mode-text">Dark mode</div>
+            <button
+              className={"theme-toggle" + (theme === 'dark' ? ' active' : '')}
+              onClick={toggleTheme}
+              aria-pressed={theme === 'dark'}
+              title="Toggle dark mode"
+            >
+              <span className="toggle-knob" />
+            </button>
           </li>
         </ul>
       </div>

@@ -22,14 +22,19 @@
 .header .tool-icon {
   margin: 0px 4px;
   height: 33px;
-  filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);
   cursor: pointer ;
 }
 
-@media (prefers-color-scheme: dark) {
-  .header .tool-icon {
-    filter: invert(95%) ;
-  }
+/* Theme-aware overrides using the document-level `data-theme` attribute.
+   These respond to the programmatic toggle (data-theme="dark") and
+   also act as fallbacks when prefers-color-scheme is not available. */
+
+:root:not([data-theme="dark"]) .header .tool-icon {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(1514%) hue-rotate(200deg) brightness(88%) contrast(93%);
+}
+
+:root[data-theme="dark"] .header .tool-icon {
+  filter: invert(95%);
 }
 
  .user-image-base {
