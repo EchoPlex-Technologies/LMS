@@ -8,6 +8,19 @@ function HomePage() {
       <title>Home</title>
       <Header />
       <Sidebar />
+
+      <div className="page-content">
+        <h1 className="page-title">Home</h1>
+
+        <div className="container-1">
+          <div className="box box-1"></div>
+          <div className="box-2"></div>
+        </div>
+
+      </div>
+
+
+
     </>
   );
 }

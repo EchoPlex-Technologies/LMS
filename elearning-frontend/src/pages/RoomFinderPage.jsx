@@ -1,14 +1,14 @@
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar';
-import './AssessmentsPage.css'
+import './RoomFinderPage.css'
 
-function AssessmentsPage() {
+function RoomFinderPage() {
   return (
     <>
       <Header />
       <Sidebar />
 
-      <h1>Assessments page</h1>
+      <h1>RoomFinder page</h1>
       <iframe src="https://elearning.mmu.ac.ug/login/index.php" width="600" height="400" title="Description of the embedded website">
         <p>Your browser does not support iframes.</p>
       </iframe>
@@ -18,4 +18,4 @@ function AssessmentsPage() {
   );
 }
 
-export default AssessmentsPage;
+export default RoomFinderPage;

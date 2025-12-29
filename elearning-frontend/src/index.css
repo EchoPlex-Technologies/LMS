@@ -11,9 +11,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --sidebar-clearance-margin: 230px;  
 
   --color-secondary: #37acf0;
   --color-secondary-two: #3a59d1;
+
+  --color-base: #37acf0;
 
   --color-primary: #ffffff;
   --color-primary-two: #ece9e9;
@@ -69,7 +73,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Dark Mode Colors */
+/* Dark Mode Colors in case the manual toggle doesn't work in the app of the user*/
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -89,10 +93,14 @@ button:focus-visible {
   }
 }
 
-/* Ensure icons react to the programmatic theme toggle (data-theme) as well */
-:root[data-theme="dark"] .header .tool-icon {
-  filter: invert(95%);
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }
-:root:not([data-theme="dark"]) .header .tool-icon {
-  filter: invert(72%) sepia(35%) saturate(2227%) hue-rotate(179deg) brightness(97%) contrast(92%);
+
+@media (max-width: 768px) {
+  :root {
+    --sidebar-clearance-margin: 30px; /* Width of the sidebar when collapsed */
+  }
 }

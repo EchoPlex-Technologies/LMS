@@ -177,42 +177,7 @@
   box-shadow: var(--box-shadow-soft);
 }
 
-.sidebar .theme-toggle.active {
-  background: rgba(0,0,0,0.18);
-}
-
-/* move knob to the right when active */
-.sidebar .theme-toggle.active .toggle-knob {
-  transform: translateX(20px);
-  background: var(--color-primary);
-}
-
-/* light/dark CSS variable overrides (minimal, safe defaults)
-   These allow the toggle to switch colors for components that use
-   the --color-* variables. They are intentionally minimal so they
-   don't clobber other global styles. */
-:root[data-theme="dark"] {
-  --color-primary: #0f1720;
-  --color-secondary: #0b1220;
-  --color-text: #eef2f7;
-  --color-text-two: #c7d2da;
-  --color-primary-two: #0b1320;
-  --color-green-accent: #7de3a8;
-  --box-shadow-base: 0 6px 18px rgba(0,0,0,0.45);
-  --box-shadow-soft: 0 6px 20px rgba(0,0,0,0.35);
-}
-
-/* light fallbacks in case variables aren't defined elsewhere */
-:root {
-  --color-primary: #ffffff;
-  --color-secondary: #f3f6fb;
-  --color-text: #0b1620;
-  --color-text-two: #50606f;
-  --color-primary-two: #e9eef6;
-  --color-green-accent: #24b47e;
-  --box-shadow-base: 0 6px 18px rgba(6,24,56,0.08);
-  --box-shadow-soft: 0 8px 28px rgba(6,24,56,0.06);
-}
+/* Theme variable declarations have been moved to App.css. */
 
 
 /*styles for the sidebar toggle button*/

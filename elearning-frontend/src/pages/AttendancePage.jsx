@@ -5,8 +5,7 @@ import './AttendancePage.css'
 function AttendancePage() {
   return (
     <>
-      <Header />
-      <Sidebar />
+
 
       <h1>Attendance page</h1>
 
