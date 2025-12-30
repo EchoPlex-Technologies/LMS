@@ -107,25 +107,25 @@ function HomePage() {
                 <div className="list-item box">
                   <div className="item-details">
                     <div className="item-due">
-                      <div className="item-time">10 AM</div>
-                      <div className="item-due-date">12th July</div>
+                      <div className="item-time">12 AM</div>
+                      <div className="item-due-date">13th July</div>
                     </div>
-                    <div className="item-course special">Business communication</div>
+                    <div className="item-course special">Math</div>
                   </div>
 
-                  <div className="item-name">Activity report</div>
+                  <div className="item-name">Online quiz</div>
                 </div>
 
                 <div className="list-item box">
                   <div className="item-details">
                     <div className="item-due">
-                      <div className="item-time">10 AM</div>
-                      <div className="item-due-date">12th July</div>
+                      <div className="item-time">12 AM</div>
+                      <div className="item-due-date">15th July</div>
                     </div>
-                    <div className="item-course special">Business communication</div>
+                    <div className="item-course special">Business management</div>
                   </div>
 
-                  <div className="item-name">Activity report</div>
+                  <div className="item-name">Research</div>
                 </div>
 
 

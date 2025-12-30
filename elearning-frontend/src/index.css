@@ -14,6 +14,7 @@
   
   --sidebar-clearance-margin: 245px;  
 
+  /* commented out to be used as a fallback in case the manual toggle color themes in App.css crash
   --color-secondary: #37acf0;
   --color-secondary-two: #3a59d1;
 
@@ -29,7 +30,7 @@
 
   --box-shadow-base: 0px 0px 5px rgba(0, 0, 0, 0.588);
   --box-shadow-soft: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  --box-shadow-white: 0px 0px 5px rgba(255, 255, 255, 0.588);
+  --box-shadow-white: 0px 0px 5px rgba(255, 255, 255, 0.588);*/
 }
 
 a {
@@ -69,12 +70,9 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-/* Dark Mode Colors in case the manual toggle doesn't work in the app of the user*/
+
+/* Dark Mode Colors in case the manual toggle doesn't work in the app of the user
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -92,7 +90,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+}*/
 
 @media (prefers-reduced-motion: reduce) {
   * {

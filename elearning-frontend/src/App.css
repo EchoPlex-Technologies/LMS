@@ -7,6 +7,7 @@
   --color-green-accent: #24b47e;
   --box-shadow-base: 0 6px 18px rgba(6,24,56,0.08);
   --box-shadow-soft: 0 8px 28px rgba(6,24,56,0.06);
+  --color-base: #37acf0;
 }
 
 :root[data-theme="dark"] {
@@ -18,6 +19,7 @@
   --color-green-accent: #7de3a8;
   --box-shadow-base: 0 6px 18px rgba(0,0,0,0.45);
   --box-shadow-soft: 0 6px 20px rgba(0,0,0,0.35);
+  --color-base: #3a59d1;
 }
 
 /* theme-aware toggle styles moved here so Sidebar inherits them */
@@ -108,5 +110,11 @@
 .separator{
   flex: 1;
   height: 1px;
+  background-color: var(--color-primary-two);
+}
+
+.vertical-separator{
+  width: 1px;
+  height: 70%;
   background-color: var(--color-primary-two);
 }
