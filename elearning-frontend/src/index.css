@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  --sidebar-clearance-margin: 230px;  
+  --sidebar-clearance-margin: 245px;  
 
   --color-secondary: #37acf0;
   --color-secondary-two: #3a59d1;
@@ -29,6 +29,7 @@
 
   --box-shadow-base: 0px 0px 5px rgba(0, 0, 0, 0.588);
   --box-shadow-soft: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  --box-shadow-white: 0px 0px 5px rgba(255, 255, 255, 0.588);
 }
 
 a {
@@ -101,6 +102,6 @@ button:focus-visible {
 
 @media (max-width: 768px) {
   :root {
-    --sidebar-clearance-margin: 30px; /* Width of the sidebar when collapsed */
+    --sidebar-clearance-margin: 60px; /* Width of the sidebar when collapsed */
   }
 }

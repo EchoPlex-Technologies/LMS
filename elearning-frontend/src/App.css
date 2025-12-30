@@ -33,30 +33,29 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-  background-color: aquamarine;
   margin-top: 60px; 
   width: 100vw;
   height: 100vh;
+  display: flex;
 }
-
 
 
 /* Global styles for the main content */
 .page-content {
-  margin-left: var(--sidebar-clearance-margin); /* Width of the sidebar */
   padding: 20px;
+  padding-left: var(--sidebar-clearance-margin); /* Width of the sidebar */
   text-align: left;
   display: flex;
+  flex-direction: column;
   max-width: 100vw;
-  height: 100vh;
-  background-color: black ;
+  max-height: 100vh;
+  flex: 1;
 }
 
 .page-title {
   position: absolute;
-  top: 90px;
+  top: 60px;
   left: var(--sidebar-clearance-margin);
   font-size: 24px;
   font-weight: bold;
@@ -69,5 +68,45 @@
   border-radius: 8px;
   box-shadow: var(--box-shadow-base);
   padding: 20px;
-  color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.box-title-small{
+  font-size: 13px;
+  margin-left: -5px;
+  font-weight: bold;
+  color: var(--color-text-two);
+  border-bottom: 1px solid var(--color-text-two);
+  padding-bottom: 4%;
+  display: flex;
+  justify-content: end;
+}
+
+.box-title-large{
+  font-size: 17px;
+  margin-left: -5px;
+  font-weight: bold;
+  color: var(--color-base);
+  border-bottom: 1px solid var(--color-base);
+  padding-bottom: 4px;
+  display: flex;
+  justify-content: start;
+}
+
+.separator-title-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.separator-title {
+  font-size: 11px;
+  color: var(--color-text-two);
+  margin: 0 5px;
+}
+
+.separator{
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-primary-two);
 }

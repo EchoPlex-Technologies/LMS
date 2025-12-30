@@ -169,7 +169,7 @@
 .sidebar .theme-toggle .toggle-knob {
   width: 18px;
   height: 18px;
-  background: var(--color-text);
+  background: var(--color-base);
   border-radius: 50%;
   display: block;
   transform: translateX(0);
@@ -209,7 +209,7 @@
 
 .toggle-button-container:hover {
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-bas);
 }
 
 /* these styles below are meant to handle the closed states of the sidebar*/
